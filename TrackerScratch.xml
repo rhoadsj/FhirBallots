@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tracker>
+<TrackerItem id="15334">
+    <Summary><![CDATA[Add+use+cases+showing+move+from+IEEE+to+FHIR+-+2018-Jan+PoCD+%231]]></Summary>
+    <Details><![CDATA[%C2%A0%0A%0ASubmitted+by%3A+Beth+Pumo%C2%A0+%28Kaiser+Permanente%29%0A%0AOn+behalf+of%3A%C2%A0+%28beth.pumo%40kp.org%29%0A%0A---%0A%0AComment%3A%0A%0ADevelop+use+cases+based+on+the+IEEE+standards+that+have+been+published+%28e.g.+implantable+caridac+devices%29+to+demonstrate+how+to+move+from+IEEE+to+FHIR.%0A%0A---%0A%0ASummary%3A%0A%0AAdd+use+cases+showing+move+from+IEEE+to+FHIR%0A]]></Details>
+    <Priority>3</Priority>
+    <Assignees>
+        <Assignee id="100">None</Assignee>
+    </Assignees>
+    <Submitter id="3416">fhir_bot</Submitter>
+    <ExtraFields/>
+    <OpenDate>2018-02-08</OpenDate>
+    <CloseDate/>
+    <LastModifiedDate>2018-02-09</LastModifiedDate>
+</TrackerItem>
+</Tracker>
