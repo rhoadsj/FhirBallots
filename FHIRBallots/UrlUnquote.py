@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 """
 Unquote a string with url encoding, for use on output of ballot reconciliation XSLTs
 
@@ -5,7 +6,7 @@ Unquote a string with url encoding, for use on output of ballot reconciliation X
 
 import sys
 import urllib.parse
-import optparse
+import argparse
 import os.path
 
 
@@ -14,29 +15,25 @@ def unquote(url_str):
 
 
 if __name__ == "__main__":
-    p = optparse.OptionParser()
-    p.add_option("-o", action="store", dest="outfile")
-    p.add_option("--output", action="store", dest="outfile")
-    # p.add_option("-x", action="store_true", dest = "xhtml")
-    # p.add_option("--html", action="store_true", dest = "xhtml")
-    # p.add_option("--wiki", action="store_true", dest = "wiki")
-    # p.set_defaults(xhtml=True, wiki=True)
-    opts, args = p.parse_args()
+    p = argparse.ArgumentParser(description="Undo url quoting - Get rid of plus signs and %nn codes")
+    p.add_argument(dest="filename", metavar="filename", nargs='?')
+    p.add_argument("-o", action="store", dest="outfile", help="output file")
+    p.add_argument("--output", action="store", dest="outfile", help="output file")
+    opts = p.parse_args()
+    if opts.filename:
+        if os.path.exists(opts.filename):
+            f_input = open(opts.filename, "r")
+        else:
+            raise SystemExit(f"{opts.filename} not found")
+    else:
+        f_input = sys.stdin
+
     fout = None
     if opts.outfile:
         fout = open(opts.outfile, "w")
     else:
         fout = sys.stdout
 
-    if len(args):
-        infilename = args[0]
-    else:
-        infilename = "BallotSubsetListRaw.html"
-
-    if not os.path.exists(infilename):
-        print("input file ", infilename, "not found")
-    f = open(infilename)
-    s = f.read()
-    f.close()
+    s = f_input.read()
     s = unquote(s)
     print(s, file=fout)
