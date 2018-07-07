@@ -4,9 +4,12 @@
     exclude-result-prefixes="xs"
     version="2.0">
     <xsl:output standalone="yes" method="xml" />
+
+    <xsl:param name="which-ballot" select="'2018-Jan PoCD'" />
+    
     <xsl:template match="/">
        <xsl:copy select="trackerItems">
-            <xsl:for-each select="/trackerItems/item[ballot='2018-Jan PoCD']">
+            <xsl:for-each select="/trackerItems/item[ballot=$which-ballot]" >
             <xsl:copy-of select="."></xsl:copy-of>           
             </xsl:for-each>
        </xsl:copy>
