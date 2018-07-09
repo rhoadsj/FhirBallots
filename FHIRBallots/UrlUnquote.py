@@ -2,12 +2,17 @@
 """
 Unquote a string with url encoding, for use on output of ballot reconciliation XSLTs
 
+note that this uses only standard library packages
+
+Author: John Rhoads
+
 """
 
 import sys
 import urllib.parse
 import argparse
 import os.path
+import html
 
 
 def unquote(url_str):
