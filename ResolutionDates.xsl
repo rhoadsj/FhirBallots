@@ -14,8 +14,8 @@
     </xsl:template>
       
     <xsl:template match="item">
-        <xsl:value-of select="@number"/>
-        <xsl:text>&#x9;</xsl:text>
         <xsl:value-of select="@resolutionDate"/>
+        <xsl:text>&#x9;</xsl:text>
+        <xsl:value-of select="@number"/>
         <xsl:text>&#xA;</xsl:text>    </xsl:template>
 </xsl:stylesheet>
