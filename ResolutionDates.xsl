@@ -6,16 +6,13 @@
     <xsl:output method="text" />
     
     <xsl:template match="/" >
-        <xsl:apply-templates select="trackerItems"></xsl:apply-templates>               
+        <xsl:for-each select="trackerItems/item">
+            <xsl:value-of select="@number"/>
+            <xsl:text>&#x9;</xsl:text>
+            <xsl:value-of select="@resolutionDate"/>
+            <xsl:text>&#xA;</xsl:text>           
+        </xsl:for-each>
     </xsl:template>
     
-    <xsl:template match="trackerItems">
-        <xsl:apply-templates select="item" />             
-    </xsl:template>
-      
-    <xsl:template match="item">
-        <xsl:value-of select="@resolutionDate"/>
-        <xsl:text>&#x9;</xsl:text>
-        <xsl:value-of select="@number"/>
-        <xsl:text>&#xA;</xsl:text>    </xsl:template>
+
 </xsl:stylesheet>
