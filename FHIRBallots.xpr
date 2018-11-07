@@ -25,11 +25,26 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>firstReport.xsl</String>
+                                    <String>trackerByBallot.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>firstReport</String>
+                                        <String>trackerByBallot</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>TrackerDetails.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>TrackerDetails</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -70,26 +85,11 @@
                             </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
-                                    <String>trackerByBallot.xsl</String>
+                                    <String>firstReport.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
                                     <list>
-                                        <String>trackerByBallot</String>
-                                    </list>
-                                </field>
-                                <field name="scenarioTypes">
-                                    <list>
-                                        <String>XSL</String>
-                                    </list>
-                                </field>
-                            </scenarioAssociation>
-                            <scenarioAssociation>
-                                <field name="url">
-                                    <String>TrackerDetails.xsl</String>
-                                </field>
-                                <field name="scenarioIds">
-                                    <list>
-                                        <String>TrackerDetails</String>
+                                        <String>firstReport</String>
                                     </list>
                                 </field>
                                 <field name="scenarioTypes">
@@ -821,7 +821,7 @@
                                     <String>${currentFileURL}</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/phdtrackers.xml</String>
+                                    <String>${pdu}/2018JanPoCDSubset.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
