@@ -33,7 +33,7 @@
                 '-',fn:MonthAbbrevToNumber($dateString[1]),
                 '-',$dateString[2]))" as="xs:date" /> 
                 
-            <xsl:value-of select="$resDate" />
+it            <xsl:value-of select="$resDate" />
             
             <!-- 
            
