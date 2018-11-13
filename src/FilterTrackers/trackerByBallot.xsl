@@ -5,7 +5,7 @@
     version="2.0">
     <xsl:output standalone="yes" method="xml" />
 
-    <xsl:param name="which-ballot" select="'2018-Jan PoCD'" />
+    <xsl:param name="which-ballot" select="'2018-Jan PHD'" />
     
     <xsl:template match="/">
        <xsl:copy select="trackerItems">
