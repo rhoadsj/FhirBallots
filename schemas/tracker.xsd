@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="trackerItems">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="user"/>
+        <xs:element maxOccurs="unbounded" ref="item"/>
+      </xs:sequence>
+      <xs:attribute name="lastChange" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="user">
+    <xs:complexType>
+      <xs:attribute name="email" use="required"/>
+      <xs:attribute name="first" use="required"/>
+      <xs:attribute name="id" use="required" type="xs:integer"/>
+      <xs:attribute name="last" use="required"/>
+      <xs:attribute name="monitor" type="xs:NCName"/>
+      <xs:attribute name="name" use="required"/>
+      <xs:attribute name="role"/>
+      <xs:attribute name="unix" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="ballot"/>
+        <xs:element maxOccurs="unbounded" ref="resources"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hTMLPages"/>
+        <xs:element maxOccurs="unbounded" ref="reviewingWorkGroup"/>
+        <xs:element ref="details"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="resolution"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="dup"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="monitor"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="attachment"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="comment"/>
+        <xs:element maxOccurs="unbounded" ref="change"/>
+      </xs:sequence>
+      <xs:attribute name="assigneeEmail"/>
+      <xs:attribute name="assigneeId" type="xs:NCName"/>
+      <xs:attribute name="assigneeName"/>
+      <xs:attribute name="ballot-weight" type="xs:NCName"/>
+      <xs:attribute name="ballotResolution"/>
+      <xs:attribute name="category" use="required" type="xs:NCName"/>
+      <xs:attribute name="changeType"/>
+      <xs:attribute name="closed" use="required"/>
+      <xs:attribute name="group"/>
+      <xs:attribute name="in-Person" type="xs:NCName"/>
+      <xs:attribute name="modified" use="required"/>
+      <xs:attribute name="modifiedEmail" use="required"/>
+      <xs:attribute name="modifiedId" use="required" type="xs:NCName"/>
+      <xs:attribute name="modifiedName" use="required"/>
+      <xs:attribute name="moverSeconderFor-Against-Abstain"/>
+      <xs:attribute name="number" use="required" type="xs:integer"/>
+      <xs:attribute name="opened" use="required"/>
+      <xs:attribute name="pre-applied" type="xs:NCName"/>
+      <xs:attribute name="priority" use="required" type="xs:integer"/>
+      <xs:attribute name="realSubmitter" use="required"/>
+      <xs:attribute name="resolutionDate"/>
+      <xs:attribute name="retractWithdraw" type="xs:NCName"/>
+      <xs:attribute name="schedule" type="xs:NCName"/>
+      <xs:attribute name="sectionnumber"/>
+      <xs:attribute name="specification" use="required"/>
+      <xs:attribute name="status" use="required"/>
+      <xs:attribute name="submittedEmail" use="required"/>
+      <xs:attribute name="submittedId" use="required" type="xs:NCName"/>
+      <xs:attribute name="submittedName" use="required"/>
+      <xs:attribute name="summary" use="required"/>
+      <xs:attribute name="targetrelease" type="xs:NCName"/>
+      <xs:attribute name="url" type="xs:anyURI"/>
+      <xs:attribute name="waitingforInpute-mails"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ballot" type="xs:string"/>
+  <xs:element name="resources" type="xs:string"/>
+  <xs:element name="hTMLPages" type="xs:string"/>
+  <xs:element name="reviewingWorkGroup" type="xs:string"/>
+  <xs:element name="details">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="p"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="resolution">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="em"/>
+        <xs:element ref="p"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="dup" type="xs:integer"/>
+  <xs:element name="monitor">
+    <xs:complexType>
+      <xs:attribute name="Email" use="required"/>
+      <xs:attribute name="Id" use="required" type="xs:NCName"/>
+      <xs:attribute name="Name" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="attachment">
+    <xs:complexType>
+      <xs:attribute name="fileName" use="required"/>
+      <xs:attribute name="posted" use="required"/>
+      <xs:attribute name="postingEmail" use="required"/>
+      <xs:attribute name="postingId" use="required" type="xs:NCName"/>
+      <xs:attribute name="postingName" use="required"/>
+      <xs:attribute name="url" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="comment">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="br"/>
+        <xs:element ref="img"/>
+        <xs:element ref="p"/>
+        <xs:element ref="strong"/>
+      </xs:choice>
+      <xs:attribute name="authorEmail" use="required"/>
+      <xs:attribute name="authorId" use="required" type="xs:NCName"/>
+      <xs:attribute name="authorName" use="required"/>
+      <xs:attribute name="date" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="change">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="element"/>
+      </xs:sequence>
+      <xs:attribute name="authorEmail" use="required"/>
+      <xs:attribute name="authorId" use="required" type="xs:NCName"/>
+      <xs:attribute name="authorName" use="required"/>
+      <xs:attribute name="date" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="element">
+    <xs:complexType>
+      <xs:attribute name="name" use="required" type="xs:NCName"/>
+      <xs:attribute name="new" use="required"/>
+      <xs:attribute name="old" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="p">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="br"/>
+        <xs:element ref="em"/>
+        <xs:element ref="img"/>
+        <xs:element ref="p"/>
+        <xs:element ref="s"/>
+        <xs:element ref="strong"/>
+        <xs:element ref="u"/>
+        <xs:element ref="script"/>
+        <xs:element ref="span"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="script">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="span">
+    <xs:complexType mixed="true">
+      <xs:attribute name="style" use="required" type="xs:NMTOKEN"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="a">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="br"/>
+        <xs:element ref="em"/>
+        <xs:element ref="img"/>
+        <xs:element ref="strong"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+      <xs:attribute name="href" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="em">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="br"/>
+        <xs:element ref="strong"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="br">
+    <xs:complexType/>
+  </xs:element>
+  <xs:element name="strong">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="br"/>
+        <xs:element ref="em"/>
+        <xs:element ref="img"/>
+        <xs:element ref="s"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="img">
+    <xs:complexType>
+      <xs:attribute name="alt" use="required"/>
+      <xs:attribute name="src" use="required" type="xs:anyURI"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="s">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="strong"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="u">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="em"/>
+        <xs:element ref="strong"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
