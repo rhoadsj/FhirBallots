@@ -1,0 +1,19 @@
+#!wing
+#!version=6.0
+##################################################################
+# Wing IDE project file : User-specific branch                   #
+##################################################################
+[user attributes]
+guimgr.overall-gui-state = {'windowing-policy': 'one-window-per-editor',
+                            'windows': [{'name': 'GwOVGIt69bVYI2lzJnteMo0mWG'\
+        '6SUHV6',
+        'size-state': '',
+        'type': 'shared-toolbar',
+        'view': {},
+        'window-alloc': (0,
+                         23,
+                         853,
+                         122)}]}
+testing.stored-results = (1,
+                          [],
+                          {})
