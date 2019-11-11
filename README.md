@@ -1,5 +1,11 @@
 # Notes
 
+Sourcetree description:
+
+* Mainly python scripts for:
+  * tracking comment resolution history
+  * formatting URLs for inclusion in meeting minutes for wiki, and the like
+
 Notes on files:
 
 downloadTrackers.sh use curl to download whole tracker.xml file from Lloyd's Google Drive or Doc auto-updated source

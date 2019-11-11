@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project version="20.1">
+<project version="21.1">
     <meta>
         <filters directoryPatterns="" filePatterns="FHIRBallots.xpr" positiveFilePatterns="" showHiddenFiles="false"/>
         <options>
-            <serialized version="20.1" xml:space="preserve">
+            <serialized version="21.1" xml:space="preserve">
                 <serializableOrderedMap>
                     <entry>
                         <String>scenario.associations</String>
                         <scenarioAssociation-array>
+                            <scenarioAssociation>
+                                <field name="url">
+                                    <String>src/FilterTrackers/trackerByBallot.xsl</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>FirstReport</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XML</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
                             <scenarioAssociation>
                                 <field name="url">
                                     <String>src/ResolutionHx/ResolutionDates.xsl</String>
@@ -311,9 +326,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <File>PHDTrackerItems.xhtml</File>
-                                </field>
                                 <field name="outputResource">
                                     <String>PHDTrackerItems.xhtml</String>
                                 </field>
@@ -396,9 +408,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>PoCDDetails.xml</File>
                                 </field>
                                 <field name="outputResource">
                                     <String>PoCDDetails.xml</String>
@@ -483,9 +492,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -568,9 +574,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
@@ -655,9 +658,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -740,9 +740,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <File>${cfn}.xml</File>
                                 </field>
                                 <field name="outputResource">
                                     <String>${cfn}.xml</String>
@@ -827,9 +824,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -912,9 +906,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
@@ -1056,9 +1047,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -1142,9 +1130,6 @@
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
                                 </field>
-                                <field name="outputFile">
-                                    <null/>
-                                </field>
                                 <field name="outputResource">
                                     <null/>
                                 </field>
@@ -1227,9 +1212,6 @@
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
-                                </field>
-                                <field name="outputFile">
-                                    <null/>
                                 </field>
                                 <field name="outputResource">
                                     <null/>
