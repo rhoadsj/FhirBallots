@@ -10,6 +10,21 @@
                         <scenarioAssociation-array>
                             <scenarioAssociation>
                                 <field name="url">
+                                    <String>data/trackers.xml</String>
+                                </field>
+                                <field name="scenarioIds">
+                                    <list>
+                                        <String>trackerByBallot</String>
+                                    </list>
+                                </field>
+                                <field name="scenarioTypes">
+                                    <list>
+                                        <String>XSL</String>
+                                    </list>
+                                </field>
+                            </scenarioAssociation>
+                            <scenarioAssociation>
+                                <field name="url">
                                     <String>src/FilterTrackers/trackerByBallot.xsl</String>
                                 </field>
                                 <field name="scenarioIds">
@@ -721,10 +736,10 @@
                                     <String></String>
                                 </field>
                                 <field name="inputXSLURL">
-                                    <String>${pdu}/trackerByBallot.xsl</String>
+                                    <String>${pdu}/src/FilterTrackers/trackerByBallot.xsl</String>
                                 </field>
                                 <field name="inputXMLURL">
-                                    <String>${pdu}/tracker.xml</String>
+                                    <String>${pdu}/data/trackers.xml</String>
                                 </field>
                                 <field name="defaultScenario">
                                     <Boolean>false</Boolean>
@@ -736,7 +751,7 @@
                                     <String>XSL</String>
                                 </field>
                                 <field name="saveAs">
-                                    <Boolean>true</Boolean>
+                                    <Boolean>false</Boolean>
                                 </field>
                                 <field name="openInBrowser">
                                     <Boolean>false</Boolean>
@@ -1372,5 +1387,6 @@
     </meta>
     <projectTree name="FHIRBallots.xpr">
         <folder path="."/>
+        <file name="data/fern.xml"/>
     </projectTree>
 </project>

@@ -6,7 +6,7 @@
         <xs:element maxOccurs="unbounded" ref="user"/>
         <xs:element maxOccurs="unbounded" ref="item"/>
       </xs:sequence>
-      <xs:attribute name="lastChange" use="required"/>
+      <xs:attribute name="lastChange" use="optional"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="user">
@@ -24,17 +24,13 @@
   <xs:element name="item">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="details"/>
-        <xs:element maxOccurs="unbounded" ref="ballot"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="ballot"/>
         <xs:element maxOccurs="unbounded" ref="resources"/>
-        <xs:element maxOccurs="unbounded" ref="hTMLPages"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="hTMLPages"/>
         <xs:element maxOccurs="unbounded" ref="reviewingWorkGroup"/>
-        <xs:element minOccurs="0" ref="resolution"/>
-        <xs:element ref="tracker_item_id"/>
-        <xs:element ref="close_date"/>
-        <xs:element ref="last_modified_by"/>
-        <xs:element ref="assignee"/>
-        <xs:element minOccurs="0" ref="dup"/>
+        <xs:element ref="details"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="resolution"/>
+        <xs:element minOccurs="0" maxOccurs="unbounded" ref="dup"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="monitor"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="attachment"/>
         <xs:element minOccurs="0" maxOccurs="unbounded" ref="comment"/>
@@ -75,19 +71,18 @@
       <xs:attribute name="waitingforInpute-mails"/>
     </xs:complexType>
   </xs:element>
+  <xs:element name="ballot" minOccurs="0" maxOccurs="1" type="xs:string"/>
+  <xs:element name="resources" minOccurs="0" maxOccurs="1" type="xs:string"/>
+  <xs:element name="hTMLPages" type="xs:string"/>
+  <xs:element name="reviewingWorkGroup" type="xs:string"/>
   <xs:element name="details">
     <xs:complexType mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="a"/>
         <xs:element ref="p"/>
-        <xs:element ref="strong"/>
       </xs:choice>
     </xs:complexType>
   </xs:element>
-  <xs:element name="ballot" type="xs:string"/>
-  <xs:element name="resources" type="xs:string"/>
-  <xs:element name="hTMLPages" type="xs:string"/>
-  <xs:element name="reviewingWorkGroup" type="xs:string"/>
   <xs:element name="resolution">
     <xs:complexType mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
@@ -97,10 +92,6 @@
       </xs:choice>
     </xs:complexType>
   </xs:element>
-  <xs:element name="tracker_item_id" type="xs:integer"/>
-  <xs:element name="close_date" type="xs:string"/>
-  <xs:element name="last_modified_by" type="xs:integer"/>
-  <xs:element name="assignee" type="xs:integer"/>
   <xs:element name="dup" type="xs:integer"/>
   <xs:element name="monitor">
     <xs:complexType>
@@ -163,9 +154,13 @@
         <xs:element ref="s"/>
         <xs:element ref="strong"/>
         <xs:element ref="u"/>
+        <xs:element ref="script"/>
         <xs:element ref="span"/>
       </xs:choice>
     </xs:complexType>
+  </xs:element>
+  <xs:element name="script">
+    <xs:complexType/>
   </xs:element>
   <xs:element name="span">
     <xs:complexType mixed="true">
@@ -178,12 +173,24 @@
         <xs:element ref="br"/>
         <xs:element ref="em"/>
         <xs:element ref="img"/>
-        <xs:element ref="s"/>
         <xs:element ref="strong"/>
         <xs:element ref="u"/>
       </xs:choice>
       <xs:attribute name="href" type="xs:anyURI"/>
     </xs:complexType>
+  </xs:element>
+  <xs:element name="em">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="a"/>
+        <xs:element ref="br"/>
+        <xs:element ref="strong"/>
+        <xs:element ref="u"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="br">
+    <xs:complexType/>
   </xs:element>
   <xs:element name="strong">
     <xs:complexType mixed="true">
@@ -193,24 +200,9 @@
         <xs:element ref="em"/>
         <xs:element ref="img"/>
         <xs:element ref="s"/>
-        <xs:element ref="strong"/>
         <xs:element ref="u"/>
       </xs:choice>
     </xs:complexType>
-  </xs:element>
-  <xs:element name="em">
-    <xs:complexType mixed="true">
-      <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element ref="a"/>
-        <xs:element ref="br"/>
-        <xs:element ref="s"/>
-        <xs:element ref="strong"/>
-        <xs:element ref="u"/>
-      </xs:choice>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="br">
-    <xs:complexType/>
   </xs:element>
   <xs:element name="img">
     <xs:complexType>
@@ -222,8 +214,6 @@
     <xs:complexType mixed="true">
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="a"/>
-        <xs:element ref="br"/>
-        <xs:element ref="em"/>
         <xs:element ref="strong"/>
         <xs:element ref="u"/>
       </xs:choice>
@@ -234,7 +224,6 @@
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element ref="a"/>
         <xs:element ref="em"/>
-        <xs:element ref="s"/>
         <xs:element ref="strong"/>
       </xs:choice>
     </xs:complexType>

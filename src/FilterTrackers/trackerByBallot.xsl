@@ -9,6 +9,7 @@
     
     <xsl:template match="/">
        <xsl:copy select="trackerItems">
+           <xsl:copy-of select="@*" />
             <xsl:for-each select="/trackerItems/item[ballot=$which-ballot]" >
             <xsl:copy-of select="."></xsl:copy-of>           
             </xsl:for-each>
