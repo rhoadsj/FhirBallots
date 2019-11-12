@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<trackerItems xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:noNamespaceSchemaLocation="../schemas/tracker.xsd" lastChange="2019-11-10 15:16:07.413463+00">
+   <item number="18273" summary="Provide Guidance on how to use the artifacts"
+      opened="2018-09-24 22:05:46+00" priority="3" closed="2018-10-31 14:56:31+00"
+      submittedName="Eric Haas" submittedEmail="ehaas@healthedatainc.com" submittedId="emhaas"
+      modified="2019-01-28 15:51:48+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Eric Haas"
+      specification="Point of Care Devices" category="Enhancement" ballot-weight="Negative-Major"
+      in-Person="No" group="Follow-Up" status="Resolved - Change required"
+      ballotResolution="Persuasive" resolutionDate="Oct 31 2018" changeType="Non-substantive"
+      moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1" pre-applied="No"
+      targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p>This IG provides FHIR profiles without any guidance how to use them.  Provide
+            Guidance on how to use these artifacts allong with inline example.... perhaps by walking
+            through a use case or two.</p><p> </p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>IG Project</reviewingWorkGroup>
+      <resolution><p>Agree. Material will be added in next ballot. See comments.</p></resolution>
+      <tracker_item_id>18273</tracker_item_id>
+
+
+      <close_date>2018-10-31 14:56:31+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-09-24 22:09:50.507117+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas"><p>The IG stated
+            purpose:</p><p>"This Implementation Guide defines the use of FHIR resources to convey
+            measurements and supporting data from acute care point-of-care medical devices (PoCD) to
+            receiving systems for electronic medical records, clinical decision support, and medical
+            data archiving for aggregate quality measurement and research purposes.
+            "</p><p> </p><p>Is impossible to achieve without appropriate guidance.</p></comment>
+      <comment date="2018-10-29 15:23:54.511717+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>This is true. We will invest
+            more time in filling in these gaps with guidance section, use case discussions, and more
+            complete examples.</p></comment>
+      <change date="2018-09-24 22:05:46.051979+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas">
+         <element name="_created_" old="" new="Provide Guidance on how to use the artifacts"/>
+      </change>
+      <change date="2018-09-24 22:09:50.507117+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas">
+         <element name="resolution" old="-" new=""/>
+      </change>
+      <change date="2018-09-26 17:50:52.427679+00" authorName="Melva Peters"
+         authorEmail="melva@jenakerconsulting.com" authorId="mpeters">
+         <element name="hTMLPages" old="None" new="(profiles)"/>
+         <element name="reviewingWorkGroup" old="None" new="IG Project"/>
+      </change>
+      <change date="2018-09-26 17:51:10.784967+00" authorName="Melva Peters"
+         authorEmail="melva@jenakerconsulting.com" authorId="mpeters">
+         <element name="status" old="Submitted" new="Triaged"/>
+      </change>
+      <change date="2018-10-29 15:07:47.686939+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+      </change>
+      <change date="2018-10-31 14:56:31.284341+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+         <element name="group" old="Fit for teleconference" new="None"/>
+         <element name="close_date" old="None" new="2018-10-31 10:56:31"/>
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="status_id" old="1" new="0"/>
+      </change>
+      <change date="2018-10-31 15:01:39.088902+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+         <element name="changeType" old="None" new="Non-substantive"/>
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+         <element name="group" old="None" new="Follow-Up"/>
+      </change>
+      <change date="2018-11-14 17:06:51.967155+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="ballot-weight" old="None" new="Negative-Major"/>
+         <element name="resolution" old="-"
+            new="&lt;p&gt;Agree. Material will be added in next ballot. See comments.&lt;/p&gt;"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="None" new="John Rhoads"/>
+         <element name="assignee" old="Nobody " new="Removed"/>
+      </change>
+   </item>
+   <item number="18275" summary="terminology is not easily accessible"
+      opened="2018-09-24 22:12:33+00" priority="3" closed="2018-10-31 15:00:17+00"
+      submittedName="Eric Haas" submittedEmail="ehaas@healthedatainc.com" submittedId="emhaas"
+      modified="2019-01-28 15:51:48+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Eric Haas"
+      specification="Point of Care Devices"
+      url="http://hl7.org/fhir/uv/pocd/2018Sep/terminology.html" category="Enhancement"
+      ballot-weight="Negative-Major" in-Person="No" group="Follow-Up"
+      status="Resolved - Change required" ballotResolution="Persuasive" resolutionDate="Oct 31 2018"
+      changeType="Non-substantive" moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1"
+      pre-applied="No" targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p>The ISO/IEEE 11073-10101 Nomenclature standard (11073 MDC) provides a
+            comprehensive terminology for device models according to the ISO/IEEE 11073-10201 Domain
+            information model (DIM). It's the preferred code system for profiles in this
+            implementation guide. Reference identifiers, terminology codes, and descriptions are
+            available at the <a href="https://rtmms.nist.gov/rtmms/index.htm">Rosetta Terminology
+               Mapping Management System</a> (RTMMS)..</p><p> </p><p>The link does not provide an
+            easy entry point to the MDC codes nor can they be inspected through the FHIR
+            valuesets.</p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>IG Project</reviewingWorkGroup>
+      <resolution><p>Agree. Work in progress for next ballot.</p></resolution>
+      <tracker_item_id>18275</tracker_item_id>
+
+
+      <close_date>2018-10-31 15:00:17+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-09-24 22:13:56.375564+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas"><p>For broad adoption I think
+            there needs to be low barrier to accessing the terminology.</p></comment>
+      <comment date="2018-10-29 15:22:01.878009+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>Valid. Now a general
+            introduction to the use of MDC codes in FHIR is available in the R4 specification.
+            General lookup information on individual codes and downloads of information on the set
+            of codes is available via the RTMMS website, and work is in progress on making these
+            available in FHIR resource forms at the FHIR terminology servers when the status
+            information is available from the RTMMS downloads.</p></comment>
+      <change date="2018-09-24 22:12:33.427166+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas">
+         <element name="_created_" old="" new="terminology is not easily accessible"/>
+      </change>
+      <change date="2018-09-24 22:13:56.375564+00" authorName="Eric Haas"
+         authorEmail="ehaas@healthedatainc.com" authorId="emhaas">
+         <element name="resolution" old="-" new=""/>
+         <element name="url"
+            old="&lt;a href=&#34;http://hl7.org/fhir/uv/pocd/2018Sep/terminology.html&#34;&gt;http://hl7.org/fhir/uv/pocd/2018Sep/terminology.html&lt;/a&gt;"
+            new="http://hl7.org/fhir/uv/pocd/2018Sep/terminology.html"/>
+      </change>
+      <change date="2018-09-26 17:50:52.427679+00" authorName="Melva Peters"
+         authorEmail="melva@jenakerconsulting.com" authorId="mpeters">
+         <element name="reviewingWorkGroup" old="None" new="IG Project"/>
+         <element name="hTMLPages" old="None" new="(profiles)"/>
+      </change>
+      <change date="2018-09-26 17:51:10.784967+00" authorName="Melva Peters"
+         authorEmail="melva@jenakerconsulting.com" authorId="mpeters">
+         <element name="status" old="Submitted" new="Triaged"/>
+      </change>
+      <change date="2018-10-29 15:08:50.448798+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+      </change>
+      <change date="2018-10-31 15:00:17.656899+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="group" old="Fit for teleconference" new="None"/>
+         <element name="close_date" old="None" new="2018-10-31 11:00:17"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+         <element name="status_id" old="1" new="0"/>
+         <element name="changeType" old="None" new="Non-substantive"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="group" old="None" new="Follow-Up"/>
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+      </change>
+      <change date="2018-11-14 17:04:32.624716+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="resolution" old="-"
+            new="&lt;p&gt;Agree. Work in progress for next ballot.&lt;/p&gt;"/>
+         <element name="ballot-weight" old="None" new="Negative-Major"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="None" new="John Rhoads"/>
+         <element name="assignee" old="Nobody " new="Removed"/>
+      </change>
+   </item>
+   <item number="19541"
+      summary="Indicate what parts of the IEEE 11073-10201 model are out of scope for this IG - PoCD #1"
+      opened="2018-10-27 17:08:10+00" priority="3" closed="2018-10-31 15:03:43+00"
+      submittedName="FHIR Bot" submittedEmail="fhirbot@dilute.net" submittedId="fhir_bot"
+      modified="2019-01-28 15:51:48+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Beth Pumo"
+      specification="Point of Care Devices" sectionnumber="Scope and Boundaries"
+      category="Enhancement" ballot-weight="Affirmative" in-Person="No" group="Follow-Up"
+      status="Resolved - Change required" ballotResolution="Persuasive" resolutionDate="Oct 31 2018"
+      changeType="Non-substantive" moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1"
+      pre-applied="No" targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p> </p><p>Submitted by: Beth Pumo  (Kaiser Permanente)</p><p>On behalf of: 
+            (Beth.Pumo@kp.org)</p><p>Existing Wording: Question: Include reference to what of the
+            11073-10201 model is out-of-bounds for this IG?</p><p>Proposed Wording: Include  what is
+            in-bounds for this IG.</p><p>---</p><p>Summary:</p><p>Indicate what parts of the IEEE
+            11073-10201 model are out of scope for this IG</p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>Devices</reviewingWorkGroup>
+      <tracker_item_id>19541</tracker_item_id>
+
+
+      <close_date>2018-10-31 15:03:43+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-10-29 14:57:19.621299+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>Proposed resolution: Accept.
+            This is a good suggestion - gives an indication of what is not yet covered and allows
+            reader to get a picture of what is to come. Discussion of roadmap may be appropriate to
+            put with this.</p></comment>
+      <change date="2018-10-27 17:08:10.388674+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="_created_" old=""
+            new="Indicate what parts of the IEEE 11073-10201 model are out of scope for this IG - PoCD #1"
+         />
+      </change>
+      <change date="2018-10-27 17:08:39.204848+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="reviewingWorkGroup" old="None" new="Devices"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+         <element name="resolution" old="-" new=""/>
+         <element name="ballot-weight" old="None" new="Affirmative"/>
+         <element name="status" old="Submitted" new="Triaged"/>
+         <element name="realSubmitter" old="None" new="Beth Pumo"/>
+         <element name="specification" old="FHIR Core" new="Point of Care Devices"/>
+      </change>
+      <change date="2018-10-29 14:57:19.621299+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+      </change>
+      <change date="2018-10-31 15:03:43.501409+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="Fit for teleconference" new="Follow-Up"/>
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="close_date" old="None" new="2018-10-31 11:03:43"/>
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+         <element name="status_id" old="1" new="0"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="changeType" old="None" new="Non-substantive"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="Nobody " new="Removed"/>
+         <element name="assignee" old="None" new="John Rhoads"/>
+      </change>
+   </item>
+   <item number="19542"
+      summary="Provice a link to the IHE Patient Care Device Technical Framework - PoCD #2"
+      opened="2018-10-27 17:08:50+00" priority="3" closed="2018-10-31 15:04:48+00"
+      submittedName="FHIR Bot" submittedEmail="fhirbot@dilute.net" submittedId="fhir_bot"
+      modified="2019-01-28 15:51:49+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Beth Pumo"
+      specification="Point of Care Devices" sectionnumber="Relationship to Othe"
+      category="Enhancement" ballot-weight="Affirmative" in-Person="No" group="Follow-Up"
+      status="Resolved - Change required" ballotResolution="Persuasive" resolutionDate="Oct 31 2018"
+      changeType="Non-substantive" moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1"
+      pre-applied="No" targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p> </p><p>Submitted by: Beth Pumo  (Kaiser Permanente)</p><p>On behalf of: 
+            (Beth.Pumo@kp.org)</p><p>---</p><p>Comment:</p><p>Provide a link to the IHE Patient Care
+            Device Technical Framework.</p><p>---</p><p>Summary:</p><p>Provice a link to the IHE
+            Patient Care Device Technical Framework</p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>Devices</reviewingWorkGroup>
+      <tracker_item_id>19542</tracker_item_id>
+
+
+      <close_date>2018-10-31 15:04:48+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-10-29 15:01:32.627504+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>Proposed resolution: Accept.
+            The IHE PCD TF is closely related to this Implementation Guide and that should be
+            indicated and discussed</p></comment>
+      <change date="2018-10-27 17:08:49.865029+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="_created_" old=""
+            new="Provice a link to the IHE Patient Care Device Technical Framework - PoCD #2"/>
+      </change>
+      <change date="2018-10-27 17:09:19.231338+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="resolution" old="-" new=""/>
+         <element name="ballot-weight" old="None" new="Affirmative"/>
+         <element name="realSubmitter" old="None" new="Beth Pumo"/>
+         <element name="reviewingWorkGroup" old="None" new="Devices"/>
+         <element name="specification" old="FHIR Core" new="Point of Care Devices"/>
+         <element name="status" old="Submitted" new="Triaged"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+      </change>
+      <change date="2018-10-29 15:01:32.627504+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="status_id" old="1" new="0"/>
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="close_date" old="None" new="2018-10-31 11:04:48"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+         <element name="changeType" old="None" new="Non-substantive"/>
+         <element name="group" old="Fit for teleconference" new="Follow-Up"/>
+      </change>
+      <change date="2018-10-31 15:10:23.08571+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="None" new="John Rhoads"/>
+         <element name="assignee" old="Nobody " new="Removed"/>
+      </change>
+   </item>
+   <item number="19543"
+      summary="Move &#34;Vital Signs Profile&#34; under a general heading of &#34;HL7 FHIR Profiles&#34;. - PoCD #3"
+      opened="2018-10-27 17:09:30+00" priority="3" closed="2018-10-31 15:04:48+00"
+      submittedName="FHIR Bot" submittedEmail="fhirbot@dilute.net" submittedId="fhir_bot"
+      modified="2019-01-28 15:51:49+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Beth Pumo"
+      specification="Point of Care Devices" sectionnumber="Relationship to Othe"
+      category="Clarification" ballot-weight="Affirmative" in-Person="No" group="Follow-Up"
+      status="Resolved - Change required" ballotResolution="Persuasive" resolutionDate="Oct 31 2018"
+      changeType="Non-substantive" moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1"
+      pre-applied="No" targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p> </p><p>Submitted by: Beth Pumo  (Kaiser Permanente)</p><p>On behalf of: 
+            (Beth.Pumo@kp.org)</p><p>---</p><p>Comment:</p><p>Move "Vital Signs Profile" under a
+            general heading of "HL7 FHIR Profiles".</p><p>---</p><p>Summary:</p><p>Move "Vital Signs
+            Profile" under a general heading of "HL7 FHIR Profiles".</p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>Devices</reviewingWorkGroup>
+      <tracker_item_id>19543</tracker_item_id>
+
+
+      <close_date>2018-10-31 15:04:48+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-10-29 15:12:11.595422+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>Proposed resolution: Accept.
+            This makes sense and the change will be made</p></comment>
+      <change date="2018-10-27 17:09:29.948517+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="_created_" old=""
+            new="Move &#34;Vital Signs Profile&#34; under a general heading of &#34;HL7 FHIR Profiles&#34;. - PoCD #3"
+         />
+      </change>
+      <change date="2018-10-27 17:09:59.437364+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="status" old="Submitted" new="Triaged"/>
+         <element name="resolution" old="-" new=""/>
+         <element name="ballot-weight" old="None" new="Affirmative"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+         <element name="reviewingWorkGroup" old="None" new="Devices"/>
+         <element name="realSubmitter" old="None" new="Beth Pumo"/>
+         <element name="category" old="Enhancement" new="Clarification"/>
+         <element name="specification" old="FHIR Core" new="Point of Care Devices"/>
+      </change>
+      <change date="2018-10-29 15:12:11.595422+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="changeType" old="None" new="Non-substantive"/>
+         <element name="close_date" old="None" new="2018-10-31 11:04:48"/>
+         <element name="status_id" old="1" new="0"/>
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+         <element name="group" old="Fit for teleconference" new="Follow-Up"/>
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+      </change>
+      <change date="2018-10-31 15:12:25.782085+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="None" new="John Rhoads"/>
+         <element name="assignee" old="Nobody " new="Removed"/>
+      </change>
+   </item>
+   <item number="19544"
+      summary="Move &#34;Structure of this guide&#34; to beginning of IG near Conventions and Abbreviations - PoCD #4"
+      opened="2018-10-27 17:10:10+00" priority="3" closed="2018-10-31 15:04:49+00"
+      submittedName="FHIR Bot" submittedEmail="fhirbot@dilute.net" submittedId="fhir_bot"
+      modified="2019-01-28 15:51:50+00" modifiedName="John Rhoads"
+      modifiedEmail="john.rhoads@philips.com" modifiedId="jrhoads" realSubmitter="Beth Pumo"
+      specification="Point of Care Devices" sectionnumber="Structure of this Gu" category="Question"
+      ballot-weight="Affirmative" in-Person="No" group="Follow-Up"
+      status="Resolved - Change required" ballotResolution="Persuasive" resolutionDate="Oct 31 2018"
+      changeType="Non-substantive" moverSeconderFor-Against-Abstain="Karl / Reinhold: 7-0-1"
+      pre-applied="No" targetrelease="DSTURelease2" assigneeName="John Rhoads"
+      assigneeEmail="john.rhoads@philips.com" assigneeId="jrhoads">
+      <details><p> </p><p>Submitted by: Beth Pumo  (Kaiser Permanente)</p><p>On behalf of: 
+            (Beth.Pumo@kp.org)</p><p>---</p><p>Comment:</p><p>This is currently pretty far down into
+            the document.  Should this be moved up along with the Abbreviations &amp; Conventions? A
+            logical placement would be after the Scope and Boundaries section.  NOTE that "&amp;"
+            should be replaced with "and".</p><p>---</p><p>Summary:</p><p>Move "Structure of this
+            guide" to beginning of IG near Conventions and Abbreviations</p></details>
+      <ballot>2018-Sep PoCD</ballot>
+      <resources>None</resources>
+      <hTMLPages>(profiles)</hTMLPages>
+      <reviewingWorkGroup>Devices</reviewingWorkGroup>
+      <tracker_item_id>19544</tracker_item_id>
+
+
+      <close_date>2018-10-31 15:04:49+00</close_date>
+
+
+
+
+      <last_modified_by>489</last_modified_by>
+      <assignee>489</assignee>
+      <comment date="2018-10-29 15:13:16.749141+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads"><p>Proposed resolution:
+            Accept.</p></comment>
+      <change date="2018-10-27 17:10:10.606389+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="_created_" old=""
+            new="Move &#34;Structure of this guide&#34; to beginning of IG near Conventions and Abbreviations - PoCD #4"
+         />
+      </change>
+      <change date="2018-10-27 17:10:40.19715+00" authorName="FHIR Bot"
+         authorEmail="fhirbot@dilute.net" authorId="fhir_bot">
+         <element name="ballot-weight" old="None" new="Affirmative"/>
+         <element name="reviewingWorkGroup" old="None" new="Devices"/>
+         <element name="status" old="Submitted" new="Triaged"/>
+         <element name="category" old="Enhancement" new="Question"/>
+         <element name="ballot" old="None" new="2018-Sep PoCD"/>
+         <element name="resolution" old="-" new=""/>
+         <element name="specification" old="FHIR Core" new="Point of Care Devices"/>
+         <element name="realSubmitter" old="None" new="Beth Pumo"/>
+      </change>
+      <change date="2018-10-29 15:13:16.749141+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="group" old="None" new="Fit for teleconference"/>
+      </change>
+      <change date="2018-10-31 15:04:46.590057+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="pre-applied" old="None" new="No"/>
+         <element name="group" old="Fit for teleconference" new="Follow-Up"/>
+         <element name="status_id" old="1" new="0"/>
+         <element name="changeType" old="None" new="Non-substantive"/>
+         <element name="status" old="Triaged" new="Resolved - Change required"/>
+         <element name="waitingFor" old="Assignee(s)" new="None"/>
+         <element name="ballotResolution" old="None" new="Persuasive"/>
+         <element name="targetrelease" old="2.0.6" new="DSTURelease2"/>
+         <element name="close_date" old="None" new="2018-10-31 11:04:49"/>
+      </change>
+      <change date="2018-10-31 15:13:42.766867+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="moverSeconderFor-Against-Abstain" old="" new="Karl / Reinhold: 7-0-1"/>
+         <element name="resolutionDate" old="" new="Oct 31 2018"/>
+      </change>
+      <change date="2019-01-28 15:51:47.953443+00" authorName="John Rhoads"
+         authorEmail="john.rhoads@philips.com" authorId="jrhoads">
+         <element name="assignee" old="None" new="John Rhoads"/>
+         <element name="assignee" old="Nobody " new="Removed"/>
+      </change>
+   </item>
+</trackerItems>
